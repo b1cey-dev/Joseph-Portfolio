@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Joseph Robinson's Portfolio
+
+My personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+
+## Technologies Used
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Heroicons
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This website is configured for deployment on Vercel. Simply push to the main branch and Vercel will automatically deploy the changes.
 
-## Learn More
+### Manual Deployment
 
-To learn more about Next.js, take a look at the following resources:
+1. Build the project:
+```bash
+npm run build
+# or
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. The static output will be generated in the `out` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Deploy to Vercel:
+```bash
+vercel deploy
+```
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `src/app/` - Main application pages and components
+- `src/components/` - Reusable React components
+- `public/` - Static assets
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `next.config.js` - Next.js configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Features
+
+- Responsive design
+- Dark theme
+- Smooth animations
+- Client testimonials
+- Project showcase
+- Contact form
+- Service offerings
+- About section
+
+## License
+
+MIT License - feel free to use this code for your own portfolio!
